@@ -5,7 +5,7 @@ public class exe01 {
 
     public static String Calcula(double nota1, double nota2, double nota3) {
         double media;
-        String resultado;
+        String resultado = null;
         media = (nota1 + nota2 + nota3) / 3;
         if ((media >= 0) && (media < 3)) {
             resultado ="Reprovado";
@@ -13,11 +13,10 @@ public class exe01 {
         } else if ((media >= 3) && (media < 7)) {
             resultado ="Reteste";
             return resultado;
-        } else if ((media >= 6) && (media <= 10)) {
+        } else 
+            if((media > 6) && (media <= 10)) 
             resultado ="Aprovado";
             return resultado;
-        }
-        return null;
     }
      public static void exe1 () {
         Scanner scan = new Scanner(System.in);

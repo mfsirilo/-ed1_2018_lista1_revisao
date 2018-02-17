@@ -38,9 +38,6 @@ public class exe06 {
                 double credito = numero - (numero * 0.07);
                 System.out.println("Venda credito - desconto 7% " + credito);
                 break;
-
         }
-
     }
-
 }
