@@ -10,13 +10,15 @@ public class Ed1_2018_revisao_lista1 {
         int i;
         i = scan.nextInt();
         scan.nextLine();
-        
-        while (i!=99){
-            
+
+        while (i != 99) {
+
             while ((i < 1) || (i > 15)) {
                 System.out.println("O exercício tem de ser entre 1 a 15\nTente novamente\nCaso queira sair informe 99");
                 i = scan.nextInt();
-                if(i==99){break;}
+                if (i == 99) {
+                    break;
+                }
             }
 
             switch (i) {
@@ -32,10 +34,10 @@ public class Ed1_2018_revisao_lista1 {
                 case 4:
                     exe04.exe4();
                     break;
+                case 5:
+                    exe05.exe5();
+                    break;
             }
-
         }
-        }
-
-
+    }
 }
